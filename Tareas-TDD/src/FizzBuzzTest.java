@@ -7,14 +7,14 @@ class FizzBuzzTest {
     @Test
     void devuelve1enCadena(){
         FizzBuzz numCalcular = new FizzBuzz();
-        numCalcular.pedirNum(1);
-        assertEquals(1,numCalcular);
+        String numACalcular = numCalcular.pedirNum(1);
+        assertEquals("1",numACalcular);
     }
     @Test
     void devuelve2enCadena(){
         FizzBuzz numCalcular = new FizzBuzz();
-        numCalcular.pedirNum(2);
-        assertEquals(2,numCalcular);
+        String numACalcular = numCalcular.pedirNum(2);
+        assertEquals("2",numACalcular);
     }
 
 }
