@@ -5,16 +5,21 @@ import static org.junit.jupiter.api.Assertions.*;
 class FizzBuzzTest {
 
     @Test
-    void devuelve1enCadena(){
+    void TesteoNum1(){
         FizzBuzz numCalcular = new FizzBuzz();
         String numACalcular = numCalcular.pedirNum(1);
         assertEquals("1",numACalcular);
     }
     @Test
-    void devuelve2enCadena(){
+    void TesteoNum2(){
         FizzBuzz numCalcular = new FizzBuzz();
         String numACalcular = numCalcular.pedirNum(2);
         assertEquals("2",numACalcular);
     }
-
+    @Test
+    void TesteoNum3(){
+        FizzBuzz numCalular = new FizzBuzz();
+        String numACalcular = numCalular.pedirNum(3);
+        assertEquals("Fizz",numACalcular);
+    }
 }
