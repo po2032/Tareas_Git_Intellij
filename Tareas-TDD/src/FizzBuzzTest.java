@@ -6,8 +6,11 @@ class FizzBuzzTest {
 
     @Test
     void TesteoNum1(){
+        // Arrange
         FizzBuzz numCalcular = new FizzBuzz();
+        //ACT
         String numACalcular = numCalcular.pedirNum(1);
+        //ASSERT
         assertEquals("1",numACalcular);
     }
     @Test
