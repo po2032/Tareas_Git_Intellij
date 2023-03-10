@@ -4,6 +4,8 @@ public class OperacionesTDD {
         String finalComa = "";
         String[] subcadenas = num.split(",");
         int sumatorio = 0;
+        int numNegativo = 0;
+
         while (j < num.length()) {
             finalComa = num.substring(j);
             j++;
@@ -13,6 +15,10 @@ public class OperacionesTDD {
         } else if (!num.isEmpty()){
             for (int i = 0; i < subcadenas.length; i++) {
                  sumatorio += Integer.parseInt(subcadenas[i]);
+                 numNegativo = Integer.parseInt(subcadenas[i]);
+                if (numNegativo < 0){
+                    return -1;
+                }
             }
             return sumatorio;
         } else {
